@@ -1,0 +1,72 @@
+<!--DOCTYPE html-->
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="shoppingsite.css">
+    <meta charset="utf-8">
+    <title>Sign In </title>
+</head>
+
+<body background-image: url>
+    <!-- Creating the Navigation bar-->
+    <nav class="navbar">
+        <div class="nav">
+            <img src="images/logo.png" class="brand-logo" alt="">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search brand, product">
+                    <button class="search-btn">search</button>
+                </div>
+                <a href="#"><img src="images/user.png" alt=""></a>
+                <a href="#"><img src="images/cart.png" alt=""></a>
+                <ul class="links-container">
+                    <li class="link-item"><a href="index.html" class="link">Home</a></li>
+                    <li class="link-item"><a href="#" class="link">Women</a></li>
+                    <li class="link-item"><a href="#" class="link">Men</a></li>
+                    <li class="link-item"><a href="#" class="link">Kids</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h3> Sign In below</h3>
+    <div class="container">
+
+        <form id="form">
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@address.com" name="email" required />
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)" required
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
+            </div>
+            <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+            <input type="submit" value="Create Account" class="btn" onClick="SignIn()" />
+    </div>
+
+    </form>
+
+    <h1>Don't have an account yet?<a href="SignUp.html" style="color:dodgerblue">Create an Account</a>.</h1>
+
+    Contact Us On:
+    <ul>
+
+        <li><a href=“mailto:shanehassanjoshua@gmail.com”> Link to Email</a>
+        <li><a href=“mailto:www.shanehassanjoshua@facebook.com”> Facebook</a>
+        <li><a href=“mailto:www.shanehassanjoshua@twitter.com”> Twitter </a>
+
+    </ul>
+
+</body>
+
+<footer>
+    <h2 class="text-footer">
+        Copyright 2022 . ShaneHassanJoshua ©-All rights are reserved
+    </h2>
+</footer>
+
+</html>
