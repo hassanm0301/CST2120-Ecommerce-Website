@@ -136,3 +136,87 @@ content{
     font-family: 'Times New Roman';
     color: lightslategrey;
 }
+
+form {
+  
+    margin: 45px auto;
+  }	
+      
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 6px 5px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }	
+  
+  input[type=date], input[type=age] {
+    width: 100%;
+    padding: 6px 5px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }	
+  
+  input[type=email], input[type=email] {
+    width: 100%;
+    padding: 6px 5px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }	
+  
+  input[type=address], input[type=address] {
+    width: 100%;
+    padding: 6px 5px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+  background-color: #2427aa; 
+  border: 5px;
+  color: white;
+  padding: 15px 27px;
+  position: inherit;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family:'Times New Roman';
+  }	
+  button:hover {
+    opacity: 0.8;
+  }	
+  
+  #btn__reset {
+	width: 50px;
+	margin: 0 auto;
+} 
+
+  .container {
+    padding: 16px;	
+    width:60%;
+    padding-left: 40%;
+  }  
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    max-height: 360px;
+    text-align: center;
+  }
+
+  .ul{
+    font-size: 15px;
+    font-family: 'Times New Roman';
+    padding:5px;
+  }
+
+  footer{
+      padding-bottom: 100%;
+      padding-left:35%;
+      font-family: 'Times New Roman';
+  }
