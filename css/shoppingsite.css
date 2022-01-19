@@ -12,6 +12,7 @@
     width: 100%;
     background: #f5f5f5;
     z-index: 9;
+    border-bottom: 2px solid rgb(173, 173, 173);
 }
 
 .nav{
@@ -219,4 +220,5 @@ form {
       padding-bottom: 100%;
       padding-left:35%;
       font-family: 'Times New Roman';
+      border-top: 2px solid rgb(173, 173, 173);
   }

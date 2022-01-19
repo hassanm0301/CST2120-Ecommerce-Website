@@ -1,0 +1,33 @@
+.cms-container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.cms-func-title{
+    color: #2427aa;
+}
+
+.cms-container input{
+    margin-bottom: 10px;
+}
+
+.gray-bar{
+    border-top: 1px solid rgb(173, 173, 173);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.text-input{
+    width: 200px;
+}
+
+.cms-container .cms-btn{
+    width: 100px;
+    background-color: #2427aa;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+}

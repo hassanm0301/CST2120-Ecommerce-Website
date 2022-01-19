@@ -10,36 +10,35 @@
     <div class="container">
 
         <form id="form">
-            <!-- Fullname -->
+
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="First Name Last Name" name="name" required minlength="2"
                     maxlength="100" />
             </div>
-            <!-- Delivery Address -->
+
             <div class="form-group">
                 <label for="address">Delivery Address</label>
                 <input type="address" id="adress" placeholder="Enter your Address" name="address" required />
             </div>
-            <!-- Email Address -->
+
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" placeholder="example@address.com" name="email" required />
             </div>
-            <!-- Date of birth -->
+
             <div class="form-group">
                 <label for="date">Date of Birth</label>
                 <input type="date" id="date" placeholder="Enter D.O.B." name="date" required />
             </div>
-            <!-- Password -->
+
             <div class="form-group">
                 <label for="password1">Password</label>
-                <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)" required
-                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)"
                     title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
             </div>
-            <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
-            <input type="submit" value="Create Account" class="btn" onClick="CreateAccount()" />
+            <input type="submit" value="Reset" class="btn" />
+            <input type="submit" value="Create Account" class="btn" />
     </div>
 
     </form>
