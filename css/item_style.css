@@ -1,0 +1,54 @@
+.item-page{
+    height: 340px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid rgb(173, 173, 173) ;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.image-col{
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+
+.info-col p{
+    height: 50px;
+}
+
+.info-col .item-desc{
+    height: 85px;
+}
+
+.item-title {
+    color: #2427aa;
+    font: 30px Times;
+    font-weight: bold;
+}
+
+.item-rating{
+    color: #2427aa;
+    font: 24px Times;
+    font-weight: bold;
+}
+
+.item-price{
+    color: #2427aa;
+    font: 24px Times;
+    font-weight: bold;
+}
+.cart-button {
+    width: 100px;
+    background-color: #2427aa;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
