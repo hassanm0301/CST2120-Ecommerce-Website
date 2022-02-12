@@ -1,4 +1,9 @@
 <?php
+REQUIRE __DIR__ . "vendor/autoload.php";
+
+$clientDB = (new MongoDB/Client);
+
+$DB = $clientDB -> CST2120-EcommerceWebsite;
 
 function outHeader($cssLocationArray){
     echo '<html lang="eng">';
