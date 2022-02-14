@@ -1,5 +1,5 @@
 <?php
-include "functions.php";
+include "php_functions/functions.php";
 outHeader(["css/shoppingsite.css"]);
 ?>
 <h4> Some of our product listings below</h4>

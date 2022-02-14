@@ -1,5 +1,5 @@
 <?php
-include "functions.php";
+include "php_functions/functions.php";
 outHeader(["css/shoppingsite.css"]);
 ?>
 
@@ -8,10 +8,15 @@ outHeader(["css/shoppingsite.css"]);
 <div class="container">
 
     <form id="form">
-        <!-- Fullname -->
+        <!-- Fist name -->
         <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="First Name Last Name" name="name" required minlength="2"
+            <label for="Fname">First Name</label>
+            <input type="text" id="Fname" placeholder="First Name" name="name" required minlength="2"
+                maxlength="100" />
+        </div>
+        <div class="form-group">
+            <label for="Lname">Last Name</label>
+            <input type="text" id="Lname" placeholder="Last Name" name="name" required minlength="2"
                 maxlength="100" />
         </div>
         <!-- Delivery Address -->
@@ -26,8 +31,8 @@ outHeader(["css/shoppingsite.css"]);
         </div>
         <!-- Date of birth -->
         <div class="form-group">
-            <label for="date">Date of Birth</label>
-            <input type="date" id="date" placeholder="Enter D.O.B." name="date" required />
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" name="username" required />
         </div>
         <!-- Password -->
         <div class="form-group">

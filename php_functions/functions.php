@@ -1,7 +1,7 @@
 <?php
-REQUIRE __DIR__ . "vendor/autoload.php";
+REQUIRE __DIR__ . "/../vendor/autoload.php";
 
-$clientDB = (new MongoDB/Client);
+$clientDB = new MongoDB\Client;
 
 $DB = $clientDB -> ecommerce;
 

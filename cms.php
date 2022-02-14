@@ -1,5 +1,5 @@
 <?php
-include "functions.php";
+include "php_functions/functions.php";
 outHeader(["css/cms_style.css", "css/shoppingsite.css"]);
 ?>
 <div class="cms-container" >
