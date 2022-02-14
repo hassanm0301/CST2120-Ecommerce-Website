@@ -1,9 +1,10 @@
 function register(){
+    console.log("here")
     let request = new XMLHttpRequest;
 
     request.onload = () => {
-        if (request.status == 200){
-            alert("Account created successfully");
+        if (request.status === 200){
+            alert(request.responseText)
         }
         else{
             alert("Problem connecting to server")
@@ -18,7 +19,7 @@ function register(){
     let adress = document.getElementById("adress").value
     let email = document.getElementById("email").value
     let username = document.getElementById("username").value
-    let password = document.getElementById("password").value
+    let password = document.getElementById("password1").value
 
     request.send(
         "Fname=" + Fname +

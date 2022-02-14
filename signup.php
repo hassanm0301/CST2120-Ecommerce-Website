@@ -1,8 +1,8 @@
 <?php
-include "php_functions/functions.php";
+include "functions/common.php";
 outHeader(["css/shoppingsite.css"]);
 ?>
-
+<script src="functions/signup.js"></script>
 
 <h3> Sign Up below</h3>
 <div class="container">
@@ -11,18 +11,18 @@ outHeader(["css/shoppingsite.css"]);
         <!-- Fist name -->
         <div class="form-group">
             <label for="Fname">First Name</label>
-            <input type="text" id="Fname" placeholder="First Name" name="name" required minlength="2"
+            <input type="text" id="Fname" placeholder="First Name" name="Fname" required minlength="2"
                 maxlength="100" />
         </div>
         <div class="form-group">
             <label for="Lname">Last Name</label>
-            <input type="text" id="Lname" placeholder="Last Name" name="name" required minlength="2"
+            <input type="text" id="Lname" placeholder="Last Name" name="Lname" required minlength="2"
                 maxlength="100" />
         </div>
         <!-- Delivery Address -->
         <div class="form-group">
             <label for="address">Delivery Address</label>
-            <input type="address" id="adress" placeholder="Enter your Address" name="address" required />
+            <input type="address" id="adress" placeholder="Enter your Address" name="adress" required />
         </div>
         <!-- Email Address -->
         <div class="form-group">
@@ -39,10 +39,11 @@ outHeader(["css/shoppingsite.css"]);
             <label for="password1">Password</label>
             <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)" required
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." name="password" />
         </div>
-        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
-        <input type="submit" value="Create Account" class="btn" onClick="CreateAccount()" />
+        <input type="submit" value="Reset" onclick="register()" class="btn" />
+        <button onclick="register()">Confirm</button>
+        <input type="submit" value="Create Account" class="btn" />
 </div>
 
 </form>

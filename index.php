@@ -1,5 +1,5 @@
 <?php
-include "php_functions/functions.php";
+include "functions/common.php";
 outHeader(["css/shoppingsite.css"]);
 ?>
 
