@@ -24,7 +24,8 @@ if ($resultFound["password"] != $password){
 
 else{
     echo json_encode([
-        "username" => $resultFound["username"]
+        "username" => $resultFound["username"],
+        "id" => $resultFound["_id"] -> __toString()
     ]);
 };
 

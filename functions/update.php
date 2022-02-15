@@ -6,10 +6,10 @@ $adress = filter_input(INPUT_POST, "adress", FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
 $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
+$id = filter_input(INPUT_POST, "id", FILTER_SANITIZE_STRING);
 
 
-
-$registerArray = [
+$updateArray = [
     "surname" => $Lname,
     "name" => $Fname,
     "address" => $adress,
@@ -18,10 +18,13 @@ $registerArray = [
     "username" => $username
 ];
 
-echo "Account created successfully";
+$criteriaArray = [
+    "_id" => new MongoDB\BSON\ObjectID($id)
+];
 
 $collection = $DB->Customers;
-$insertResult = $collection->insertOne($registerArray);
+$insertResult = $collection->replaceOne($criteriaArray, $updateArray);
 
+echo "Account updated successfully";
 
 ?>

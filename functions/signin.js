@@ -15,6 +15,7 @@ function signin(){
                 window.sessionStorage.setItem("loggedIn", true)
                 window.sessionStorage.setItem("staff", false)
                 window.sessionStorage.setItem("username", response.username)
+                window.sessionStorage.setItem("id", response.id)
                 document.getElementById("loggedIn").innerHTML = "Logged in as " + response.username
             }
         }
