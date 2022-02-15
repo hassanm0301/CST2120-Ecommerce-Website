@@ -41,9 +41,8 @@ outHeader(["css/shoppingsite.css"]);
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                 title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." name="password" />
         </div>
-        <input type="submit" value="Reset" onclick="register()" class="btn" />
-        <button onclick="register()">Confirm</button>
-        <input type="submit" value="Create Account" class="btn" />
+        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+        <input type="submit" value="Create Account" class="btn" onclick="register()" />
 </div>
 
 </form>

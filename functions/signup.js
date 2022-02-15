@@ -1,5 +1,4 @@
 function register(){
-    console.log("here")
     let request = new XMLHttpRequest;
 
     request.onload = () => {
@@ -11,7 +10,7 @@ function register(){
         }
     }
 
-    request.open("POST", "php_functions/register.php")
+    request.open("POST", "functions/register.php")
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     let Fname = document.getElementById("Fname").value
