@@ -6,7 +6,7 @@ outHeader(["css/shoppingsite.css"]);
 
 <h3> Sign Up below</h3>
 <div class="container">
-
+    <p id="loggedInStatus"></p>
     <form id="form">
         <!-- Fist name -->
         <div class="form-group">
@@ -41,8 +41,7 @@ outHeader(["css/shoppingsite.css"]);
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                 title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." name="password" />
         </div>
-        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
-        <input type="submit" value="Create Account" class="btn" onclick="register()" />
+        <button type="submit" class="btn" onclick="register()">Create Account</button>
 </div>
 
 </form>

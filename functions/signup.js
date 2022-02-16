@@ -3,8 +3,8 @@ function register(){
 
     request.onload = () => {
         if (request.status === 200){
-            let alert = request.responseText
-            alert("success "+alert)
+            let response = request.responseText
+            alert(response)
         }
         else{
             alert("Problem connecting to server")

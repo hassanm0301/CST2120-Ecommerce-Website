@@ -18,10 +18,10 @@ $registerArray = [
     "username" => $username
 ];
 
-echo "Account created successfully";
-
 $collection = $DB->Customers;
 $insertResult = $collection->insertOne($registerArray);
+
+echo "Account created successfully";
 
 
 ?>

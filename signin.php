@@ -17,8 +17,7 @@ outHeader(["css/shoppingsite.css"]);
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Create Password (Min. 8 Characters)" required/>
         </div>
-        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
-        <input type="submit" value="Sign In" class="btn" onclick="signin()" />
+        <button type="submit" class="btn" onclick="signin()">Sign In</button>
 </div>
 
 </form>
