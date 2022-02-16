@@ -1,16 +1,17 @@
-function update(){
+function register(){
     let request = new XMLHttpRequest;
 
     request.onload = () => {
         if (request.status === 200){
-            alert("Update successful")
+            let response = request.responseText
+            alert(response)
         }
         else{
             alert("Problem connecting to server")
         }
     }
 
-    request.open("POST", "functions/update.php")
+    request.open("POST", "functions/php/register.php")
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     let Fname = document.getElementById("Fname").value
@@ -19,7 +20,6 @@ function update(){
     let email = document.getElementById("email").value
     let username = document.getElementById("username").value
     let password = document.getElementById("password1").value
-    let id = window.sessionStorage.getItem("id")
 
     request.send(
         "Fname=" + Fname +
@@ -27,7 +27,6 @@ function update(){
         "&adress=" + adress +
         "&email=" + email +
         "&username=" + username +
-        "&password=" + password +
-        "&id=" + id
+        "&password=" + password
     )
 }

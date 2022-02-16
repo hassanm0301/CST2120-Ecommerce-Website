@@ -1,8 +1,8 @@
 <?php
-include "functions/common.php";
+include "functions/php/common.php";
 outHeader(["css/shoppingsite.css"]);
 ?>
-<script src="functions/update.js"></script>
+<script src="functions/js/update.js"></script>
 
 <h3> Update Customer Details</h3>
 <div class="container">

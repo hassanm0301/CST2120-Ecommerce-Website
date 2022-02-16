@@ -8,7 +8,7 @@ request.onload = () =>{
     }
 }
 
-request.open("POST", "functions/order.php")
+request.open("POST", "functions/php/order.php")
 request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
 request.send(

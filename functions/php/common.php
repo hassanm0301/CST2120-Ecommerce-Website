@@ -1,5 +1,5 @@
 <?php
-REQUIRE __DIR__ . "/../vendor/autoload.php";
+REQUIRE __DIR__ . "/../../vendor/autoload.php";
 
 $clientDB = new MongoDB\Client;
 

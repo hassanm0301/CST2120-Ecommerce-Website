@@ -1,8 +1,8 @@
 <?php
-include "functions/common.php";
+include "functions/php/common.php";
 outHeader(["css/shoppingsite.css"]);
 ?>
-<script src="functions/signin.js"></script>
+<script src="functions/js/signin.js"></script>
 <h3> Sign In below</h3>
 <div class="container">
 
