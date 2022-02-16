@@ -2,26 +2,18 @@
 include "functions/php/common.php";
 outHeader(["css/shoppingsite.css"]);
 ?>
-<h4> Some of our product listings below</h4>
-<div class="product-container">
-    <a href="item.php">
-        <div class="product-card">
-            <div class="product-image">
-                <img src="images/tshirt.jpg" class="product-thumb" alt="">
-                <button class="card-btn">add to cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">SHJ</h2>
-                <p class="product-short-des">Breathable material, cotton. </p>
-                <span class="price">Rs450</span>
-            </div>
-    
-        </div>
-    </a>
-    
 
+
+<div class="search">
+    <input type="text" class="search-box" placeholder="search brand, product" required>
+    <input type ="submit">
+    </form>
 </div>
+<h4> Some of our product listings below</h4>
 
+<div id="productsContent"></div>
+
+<script src="functions/js/browse.js"></script>
 <?php
 include "html/footer.html";
 
