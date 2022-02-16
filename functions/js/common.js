@@ -6,6 +6,6 @@ if(window.sessionStorage.getItem("loggedIn") == "true"){
     document.getElementById("signUpa").href = "orders.php"
 }
 
-if(window.sessionStorage.getItem("staff") == "false"){
-    document.getElementById("cmsa").style = "display:none"
+if(window.sessionStorage.getItem("staff") == "true"){
+    document.getElementById("cmsa").style = "display:block"
 }

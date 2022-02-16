@@ -13,7 +13,7 @@ function signin(){
             }
             else{
                 window.sessionStorage.setItem("loggedIn", true)
-                window.sessionStorage.setItem("staff", false)
+                window.sessionStorage.setItem("staff", response.staffCheck)
                 window.sessionStorage.setItem("username", response.username)
                 window.sessionStorage.setItem("id", response.id)
                 document.getElementById("loggedIn").innerHTML = "Logged in as " + response.username
@@ -26,10 +26,12 @@ function signin(){
 
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
+    let staffCheck = document.getElementById("staffCheck").checked;
 
 
     request.send(
         "username=" + username +
-        "&password=" + password
+        "&password=" + password +
+        "&staffCheck=" + staffCheck
     )
 }
