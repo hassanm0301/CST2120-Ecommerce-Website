@@ -4,11 +4,7 @@ outHeader(["css/shoppingsite.css"]);
 ?>
 
 
-<div class="search">
-    <input type="text" class="search-box" placeholder="search brand, product" required>
-    <input type ="submit">
-    </form>
-</div>
+
 <h4> Some of our product listings below</h4>
 
 <div id="productsContent"></div>

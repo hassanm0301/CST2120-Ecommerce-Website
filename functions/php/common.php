@@ -49,6 +49,9 @@ function dispMultiProd($prodMultiArray){
             $tempArray = [];
         }
     }
+    if(count($tempArray) == 1){
+        dispProd($tempArray["0"]);
+    }
 }
 
 ?>

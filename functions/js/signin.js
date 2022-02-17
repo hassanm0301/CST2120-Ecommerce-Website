@@ -21,7 +21,7 @@ function signin(){
         }
     }
 
-    request.open("POST", "functions/php/signin.php")
+    request.open("POST", "functions/php/signinServer.php")
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     let username = document.getElementById("username").value;

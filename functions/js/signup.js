@@ -11,7 +11,7 @@ function register(){
         }
     }
 
-    request.open("POST", "functions/php/register.php")
+    request.open("POST", "functions/php/registerServer.php")
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     let Fname = document.getElementById("Fname").value

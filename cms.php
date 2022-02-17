@@ -2,20 +2,27 @@
 include "functions/php/common.php";
 outHeader(["css/cms_style.css", "css/shoppingsite.css"]);
 ?>
-<div class="cms-container" >
+
+<div class="cms-container">
     <h3 class="cms-func-title">Add new product to Database</h3>
-    <form id="addToDB">
+    <form id="addToDB" action="functions/php/addProdServer.php" method="post" enctype="multipart/form-data">
 
         <label for="">Upload picture</label><br>
-        <input type="file"><br>
+        <input type="file" name="image"><br>
 
         <label for="">Product name</label><br>
-        <input type="text" class="text-input" style="width: 200px;"><br>
+        <input type="text" class="text-input" style="width: 200px;" name="prodName"><br>
 
         <label for="">Product price</label><br>
-        <input type="number" class="text-input"><br>
+        <input type="number" class="text-input" name="prodPrice"><br>
 
-        <button class="cms-btn">Confirm</button>
+        <label for="">Product stock</label><br>
+        <input type="number" class="text-input" name="prodStock"><br>
+
+        <label for="">Product desctription</label><br>
+        <input type="text" class="text-input" name="prodDesc"><br>
+
+        <input type="submit" value="Add">
     </form>
 
 </div>
@@ -24,19 +31,25 @@ outHeader(["css/cms_style.css", "css/shoppingsite.css"]);
 <br>
 
 <div class="cms-container">
-    <h3 class="cms-func-title">Resupply stock</h3>
-    <form id="addToDB">
+    <h3 class="cms-func-title">Edit product on Database</h3>
+    <form id="addToDB" action="functions/php/updateProdServer.php" method="post" enctype="multipart/form-data">
 
-        <label for="">Product ID</label><br>
-        <input type="text" style="width: 200px;"><br>
+        <label for="">Upload new picture</label><br>
+        <input type="file" name="image"><br>
 
-        <label for="">Product price</label><br>
-        <input type="number" class="text-input"><br>
+        <label for="">New Product name</label><br>
+        <input type="text" class="text-input" style="width: 200px;" name="prodName"><br>
 
-        <label for="">Amount brought in</label><br>
-        <input type="number" class="text-input"><br>
+        <label for="">New Product price</label><br>
+        <input type="number" class="text-input" name="prodPrice"><br>
 
-        <button class="cms-btn">Confirm</button>
+        <label for="">New Product stock</label><br>
+        <input type="number" class="text-input" name="prodStock"><br>
+
+        <label for="">New Product desctription</label><br>
+        <input type="text" class="text-input" name="prodDesc"><br>
+
+        <input type="submit" value="Update">
     </form>
 
 </div>

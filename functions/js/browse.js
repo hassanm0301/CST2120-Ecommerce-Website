@@ -11,6 +11,7 @@ request.onload = () => {
     }
 }
 
-request.open("GET", "functions/php/browse.php")
+request.open("GET", "functions/php/browseServer.php")
 
 request.send()
+

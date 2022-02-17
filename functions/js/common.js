@@ -9,3 +9,10 @@ if(window.sessionStorage.getItem("loggedIn") == "true"){
 if(window.sessionStorage.getItem("staff") == "true"){
     document.getElementById("cmsa").style = "display:block"
 }
+
+if(window.location.href.slice(-10) == "browse.php"){
+    document.getElementById("searchBar").style = "display: block"
+}
+else{
+    document.getElementById("searchBar").style = "display: none"
+}

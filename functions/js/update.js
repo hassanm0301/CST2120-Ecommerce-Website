@@ -10,7 +10,7 @@ function update(){
         }
     }
 
-    request.open("POST", "functions/php/update.php")
+    request.open("POST", "functions/php/updateServer.php")
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     let Fname = document.getElementById("Fname").value
