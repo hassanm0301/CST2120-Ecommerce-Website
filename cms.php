@@ -34,6 +34,9 @@ outHeader(["css/cms_style.css", "css/shoppingsite.css"]);
     <h3 class="cms-func-title">Edit product on Database</h3>
     <form id="addToDB" action="functions/php/updateProdServer.php" method="post" enctype="multipart/form-data">
 
+        <label for="">Product id</label><br>
+        <input type="text" class="text-input" style="width: 200px;" name="prodId"><br>
+
         <label for="">Upload new picture</label><br>
         <input type="file" name="image"><br>
 
@@ -51,6 +54,16 @@ outHeader(["css/cms_style.css", "css/shoppingsite.css"]);
 
         <input type="submit" value="Update">
     </form>
+
+</div>
+
+<div class="gray-bar"></div>
+<br>
+
+<div class="cms-container">
+    <h3 class="cms-func-title">View all products details</h3> 
+
+    <a href="browse.php"><input type="submit" value="View"></a>
 
 </div>
 

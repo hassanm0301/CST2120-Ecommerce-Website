@@ -4,6 +4,7 @@
     <title>SHJ </title> 
   </head>
   <body  background-image: url>
+      <script src="functions/js/search.js"></script>
    <!-- Creating the Navigation bar-->
    <nav class="navbar">
     <div class="nav">
@@ -11,8 +12,12 @@
         
         <div class="nav-items">
             <div class="search" id="searchBar">
-                <input type="text" class="search-box" placeholder="search brand, product" required>
-                <input type ="submit">
+                <input type="text" class="search-box" placeholder="search brand, product" id="searchBox" required>
+                <select name="sort" id="sort">
+                    <option value="price">Price</option>
+                    <option value="name">Alphabetical</option>
+                  </select>
+                <input type ="submit" onclick="search()">
                 </form>
             </div>
            

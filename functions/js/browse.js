@@ -11,7 +11,13 @@ request.onload = () => {
     }
 }
 
-request.open("GET", "functions/php/browseServer.php")
+if(window.sessionStorage.getItem("staff") == "true"){
+    request.open("GET", "functions/php/browseAdminServer.php")
+}
+else{
+    request.open("GET", "functions/php/browseServer.php")
+}
+
 
 request.send()
 
