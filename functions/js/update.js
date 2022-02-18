@@ -1,3 +1,5 @@
+// updating account details for customers only
+
 function update(){
     let request = new XMLHttpRequest;
 

@@ -1,4 +1,4 @@
-<?php
+<?php // finding customer order and returning in tabular form
 
 include_once "common.php";
 
@@ -8,25 +8,31 @@ $orderCriteria = [
     "customerID" => $id
 ];
 
+
+if($id == ""){ // if in admin mode, all orders will be visible
+    $orderCriteria = [];
+}
 $resultOrders = $DB -> Orders -> find($orderCriteria);
 
 
 
 foreach ($resultOrders as $elem){
+    echo "<table>";
     echo "<tr>";
     echo "<td> Order </td>";
     echo "</tr>";
     
-    for ($i = 0; $i < count($elem["productsname"]); $i++){
+    for ($i = 0; $i < count($elem["productsName"]); $i++){
         echo "<tr>";
         echo "<td>";
-        echo $elem["productsname"][$i];
+        echo $elem["productsName"][$i];
         echo "</td>";
         echo "<td>";
-        echo $elem["productsQuantity"][$i];
+        echo $elem["productsQuanity"][$i];
         echo "</td>";
         echo "</tr>";
     }
+    echo "<table>";
 
 };
 

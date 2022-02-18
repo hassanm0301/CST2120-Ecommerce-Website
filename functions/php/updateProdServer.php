@@ -1,4 +1,5 @@
-<?php
+<?php  //make changes to products on database
+        // available for admins only
 
 include_once "common.php";
 

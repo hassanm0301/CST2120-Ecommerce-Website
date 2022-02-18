@@ -10,18 +10,18 @@ outHeader(["css/shoppingsite.css"]);
         <!-- Email Address -->
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Username" name="username" required />
+            <input type="text" id="usrname" placeholder="Username" name="username" required />
         </div>
         <!-- Password -->
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Create Password (Min. 8 Characters)" required/>
+            <input type="password" id="passwrd" required/>
         </div>
         <div class="form-group">
             <label for="Staff">Staff</label>
             <input type="checkbox" id="staffCheck"/>
         </div>
-        <button type="submit" class="btn" onclick="signin()">Sign In</button>
+        <button onclick="signin()">Sign In</button>
 </div>
 
 </form>

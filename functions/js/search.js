@@ -1,3 +1,5 @@
+// file for searching and sorting items in browsing page
+
 function search(){
     let request = new XMLHttpRequest
 
@@ -12,6 +14,7 @@ function search(){
         }
     }
 
+    // checks for admin or customer
     if(window.sessionStorage.getItem("staff") == "true"){
         request.open("POST", "functions/php/browseAdminServer")
     }
@@ -19,6 +22,7 @@ function search(){
         request.open("POST", "functions/php/browseServer.php")
     }
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+
 
     searchItem = document.getElementById("searchBox").value
     sortItem = document.getElementById("sort").value

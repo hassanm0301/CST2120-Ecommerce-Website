@@ -1,10 +1,10 @@
-<?php
+<?php // siging in for custoners and admins
 
 include_once "common.php";
 
-$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
-$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
-$staffCheck = filter_input(INPUT_POST, "staffCheck", FILTER_SANITIZE_STRING);
+$username = $_POST["usrname"];
+$password = $_POST["passwrd"];
+$staffCheck = $_POST["staffCheck"];
 
 if ($staffCheck == "true"){
     $collection = $DB -> Admins;
@@ -19,18 +19,23 @@ $criteria = [
 
 $resultFound = $collection->findOne($criteria);
 
+$id = $resultFound["_id"] -> __toString(); // makes objectID into string
+
+
+// validations
 if ($resultFound == null){
-    echo json_encode(["err"=>"1"]);
+    echo json_encode("1");
 }
 
-if ($resultFound["password"] != $password){
-    echo json_encode(["err"=>"2"]);
+else if ($resultFound["password"] != $password){
+    echo json_encode("2");
 }
 
 else{
     echo json_encode([
+        "msg" => "Sign in successful",
         "username" => $resultFound["username"],
-        "id" => $resultFound["_id"] -> __toString(),
+        "id" => $id,
         "staffCheck" => $staffCheck
     ]);
 };

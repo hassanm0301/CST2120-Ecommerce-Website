@@ -1,10 +1,13 @@
-<?php
+<?php // functions used by almost all other php files
+    // included in every php files
+    // Put universal php code here
 REQUIRE __DIR__ . "/../../vendor/autoload.php";
 
 $clientDB = new MongoDB\Client;
 
 $DB = $clientDB -> ecommerce;
 
+// displays header taking as argument array of css file locations
 function outHeader($cssLocationArray){
     echo '<html lang="eng">';
     echo '<head>';
@@ -14,12 +17,13 @@ function outHeader($cssLocationArray){
     include "html/header.html";
 };
 
+// displays 1 product from array of details
 function dispProd($prodArray){
     echo '<div class="product-container">';
     echo    '<div class="product-card">';
     echo        '<div class="product-image">';
     echo            '<img src='.$prodArray["imgPath"].' class="product-thumb" alt="">';
-    echo            '<button class="card-btn">add to cart</button>';
+    echo            "<button onclick=\"addToCart('".$prodArray["_id"]."')\" class=\"card-btn\">add to cart</button>";
     echo        '</div>';
     echo        '<div class="product-info">';
     echo            '<h2 class="product-brand">'.$prodArray["name"].'</h2>';
@@ -30,6 +34,7 @@ function dispProd($prodArray){
     echo '</div>';
 };
 
+// displays 2 products side by side using array of 2 products
 function dispProdrow($prod2Array){
     echo '<div class="product-row">';
     dispProd($prod2Array["0"]);
@@ -37,6 +42,7 @@ function dispProdrow($prod2Array){
     echo '</div>';
 }
 
+// displays limitless amount of 2 column of products (2 on each row) from array of products details
 function dispMultiProd($prodMultiArray){
     $i = 0;
     $tempArray = [];
@@ -54,6 +60,7 @@ function dispMultiProd($prodMultiArray){
     }
 }
 
+// displays 1 product with more details for admins. These products cannot be bought
 function dispProdAdmin($prodArray){
     echo '<div class="product-container">';
     echo    '<div class="product-card">';
@@ -71,6 +78,7 @@ function dispProdAdmin($prodArray){
     echo '</div>';
 };
 
+// displays 2 products with more details for admins
 function dispProdrowAdmin($prod2Array){
     echo '<div class="product-row">';
     dispProdAdmin($prod2Array["0"]);
@@ -78,6 +86,7 @@ function dispProdrowAdmin($prod2Array){
     echo '</div>';
 }
 
+// displays umlimited products for admins
 function dispMultiProdAdmin($prodMultiArray){
     $i = 0;
     $tempArray = [];

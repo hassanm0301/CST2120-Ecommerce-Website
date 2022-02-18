@@ -1,4 +1,4 @@
-<?php
+<?php // registration for customers backend
 include_once "common.php";
 $Fname = filter_input(INPUT_POST, "Fname", FILTER_SANITIZE_STRING);
 $Lname = filter_input(INPUT_POST, "Lname", FILTER_SANITIZE_STRING);

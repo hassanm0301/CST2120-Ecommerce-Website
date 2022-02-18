@@ -1,3 +1,5 @@
+// Fetches all available products to display on page
+
 let request = new XMLHttpRequest
 
 request.onload = () => {

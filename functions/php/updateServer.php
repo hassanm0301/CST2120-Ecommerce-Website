@@ -1,4 +1,4 @@
-<?php
+<?php // updates customer details backend
 include_once "common.php";
 $Fname = filter_input(INPUT_POST, "Fname", FILTER_SANITIZE_STRING);
 $Lname = filter_input(INPUT_POST, "Lname", FILTER_SANITIZE_STRING);
@@ -23,7 +23,7 @@ $criteriaArray = [
 ];
 
 $collection = $DB->Customers;
-$insertResult = $collection->replaceOne($criteriaArray, $updateArray);
+$insertResult = $collection->replaceOne($criteriaArray, $updateArray); //replaces document keeping id same
 
 echo "Account updated successfully";
 

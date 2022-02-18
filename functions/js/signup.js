@@ -1,3 +1,5 @@
+// registration for customers only
+
 function register(){
     let request = new XMLHttpRequest;
 

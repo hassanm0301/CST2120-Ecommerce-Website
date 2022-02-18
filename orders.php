@@ -4,7 +4,7 @@ outHeader(["css/shoppingsite.css"]);
 
 ?>
 <script src="functions/js/order.js"></script>
-<table id="orderTable"></table>
+<div id="orderTable"></div>
 
 <?php
 include "html/footer.html";

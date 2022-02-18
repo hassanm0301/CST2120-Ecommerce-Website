@@ -1,4 +1,5 @@
-<?php
+<?php // displays products for customers
+    //search and sorting implemented
 
 include_once "common.php";
 
@@ -22,7 +23,7 @@ if($searchItem!=null || $sortItem!=null){
     }
     
     $criteria = [
-        "name" => new MongoDB\BSON\Regex($searchItem, "i"),
+        "name" => new MongoDB\BSON\Regex($searchItem, "i"), // uses regex to search
     ];
     
 }

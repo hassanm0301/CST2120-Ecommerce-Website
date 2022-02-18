@@ -1,4 +1,4 @@
-<?php
+<?php //adding new product to database
 
 include_once "common.php";
 
